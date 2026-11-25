@@ -1,0 +1,26 @@
+[Unit]
+Description=Karaali QR-authenticated BLE Wi-Fi provisioning (root POC)
+Requires=NetworkManager.service bluetooth.service
+After=NetworkManager.service bluetooth.service dbus.service
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/opt/karaali-provisioning
+StateDirectory=karaali-provisioning
+StateDirectoryMode=0700
+UMask=0077
+ProtectSystem=strict
+ReadWritePaths=/var/lib/karaali-provisioning
+NoNewPrivileges=yes
+CapabilityBoundingSet=
+PrivateTmp=yes
+ExecStart=/opt/karaali-provisioning/.venv/bin/device-provision serve --identity /var/lib/karaali-provisioning/identity.json --state /var/lib/karaali-provisioning/provisioning-state.json
+Restart=on-failure
+RestartSec=3
+TimeoutStopSec=25
+KillSignal=SIGINT
+
+[Install]
+WantedBy=multi-user.target

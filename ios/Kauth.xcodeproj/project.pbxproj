@@ -1,0 +1,255 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000000000000000000000101 = {isa = PBXBuildFile; fileRef = 000000000000000000000201; };
+		000000000000000000000102 = {isa = PBXBuildFile; fileRef = 000000000000000000000202; };
+		000000000000000000000103 = {isa = PBXBuildFile; fileRef = 000000000000000000000203; };
+		000000000000000000000104 = {isa = PBXBuildFile; fileRef = 000000000000000000000204; };
+		000000000000000000000105 = {isa = PBXBuildFile; fileRef = 000000000000000000000205; };
+		000000000000000000000106 = {isa = PBXBuildFile; fileRef = 000000000000000000000206; };
+		000000000000000000000107 = {isa = PBXBuildFile; fileRef = 000000000000000000000207; };
+		000000000000000000000108 = {isa = PBXBuildFile; fileRef = 000000000000000000000211; };
+		000000000000000000000109 = {isa = PBXBuildFile; fileRef = 000000000000000000000212; };
+		000000000000000000000110 = {isa = PBXBuildFile; fileRef = 000000000000000000000213; };
+		000000000000000000000111 = {isa = PBXBuildFile; fileRef = 000000000000000000000214; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		000000000000000000000301 = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000000000000001;
+			proxyType = 1;
+			remoteGlobalIDString = 000000000000000000000401;
+			remoteInfo = Kauth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		000000000000000000000201 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvisioningApp.swift; sourceTree = "<group>"; };
+		000000000000000000000202 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvisioningProtocol.swift; sourceTree = "<group>"; };
+		000000000000000000000203 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvisioningBluetooth.swift; sourceTree = "<group>"; };
+		000000000000000000000204 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanner.swift; sourceTree = "<group>"; };
+		000000000000000000000205 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvisioningCryptoTests.swift; sourceTree = "<group>"; };
+		000000000000000000000206 = {isa = PBXFileReference; lastKnownFileType = text.json; path = interop.json; sourceTree = "<group>"; };
+		000000000000000000000207 = {isa = PBXFileReference; lastKnownFileType = text.json; path = "rfc9180-psk.json"; sourceTree = "<group>"; };
+		000000000000000000000208 = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000000000000000000000209 = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kauth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000000210 = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KauthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000000211 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvisioningNetworkStore.swift; sourceTree = "<group>"; };
+		000000000000000000000212 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvisioningNetworkPolicy.swift; sourceTree = "<group>"; };
+		000000000000000000000213 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvisioningNetworkTests.swift; sourceTree = "<group>"; };
+		000000000000000000000214 = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		000000000000000000000501 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		000000000000000000000502 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000000000000000000000601 = {
+			isa = PBXGroup;
+			children = (000000000000000000000602, 000000000000000000000603, 000000000000000000000604, 000000000000000000000605);
+			sourceTree = "<group>";
+		};
+		000000000000000000000602 = {
+			isa = PBXGroup;
+			children = (000000000000000000000201, 000000000000000000000202, 000000000000000000000203, 000000000000000000000204, 000000000000000000000208, 000000000000000000000211, 000000000000000000000212, 000000000000000000000214);
+			path = Kauth;
+			sourceTree = "<group>";
+		};
+		000000000000000000000603 = {
+			isa = PBXGroup;
+			children = (000000000000000000000205, 000000000000000000000213);
+			path = KauthTests;
+			sourceTree = "<group>";
+		};
+		000000000000000000000604 = {
+			isa = PBXGroup;
+			children = (000000000000000000000206, 000000000000000000000207);
+			name = "Test-only fixtures";
+			path = ../fixtures;
+			sourceTree = "<group>";
+		};
+		000000000000000000000605 = {
+			isa = PBXGroup;
+			children = (000000000000000000000209, 000000000000000000000210);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		000000000000000000000401 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000000000000000801;
+			buildPhases = (000000000000000000000701, 000000000000000000000501, 000000000000000000000703);
+			buildRules = ();
+			dependencies = ();
+			name = Kauth;
+			productName = Kauth;
+			productReference = 000000000000000000000209;
+			productType = "com.apple.product-type.application";
+		};
+		000000000000000000000402 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000000000000000802;
+			buildPhases = (000000000000000000000702, 000000000000000000000502, 000000000000000000000704);
+			buildRules = ();
+			dependencies = (000000000000000000000302);
+			name = KauthTests;
+			productName = KauthTests;
+			productReference = 000000000000000000000210;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000000000000000000000001 = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					000000000000000000000401 = {CreatedOnToolsVersion = 15.2; ProvisioningStyle = Automatic; };
+					000000000000000000000402 = {CreatedOnToolsVersion = 15.2; ProvisioningStyle = Automatic; TestTargetID = 000000000000000000000401; };
+				};
+			};
+			buildConfigurationList = 000000000000000000000803;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en, Base);
+			mainGroup = 000000000000000000000601;
+			productRefGroup = 000000000000000000000605;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (000000000000000000000401, 000000000000000000000402);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		000000000000000000000703 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (000000000000000000000111); runOnlyForDeploymentPostprocessing = 0; };
+		000000000000000000000704 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (000000000000000000000106, 000000000000000000000107); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		000000000000000000000701 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (000000000000000000000101, 000000000000000000000102, 000000000000000000000103, 000000000000000000000104, 000000000000000000000108, 000000000000000000000109); runOnlyForDeploymentPostprocessing = 0; };
+		000000000000000000000702 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (000000000000000000000105, 000000000000000000000110); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		000000000000000000000302 = {isa = PBXTargetDependency; target = 000000000000000000000401; targetProxy = 000000000000000000000301; };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		000000000000000000000901 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Kauth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks");
+				PRODUCT_BUNDLE_IDENTIFIER = com.ozankaraali.Kauth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		000000000000000000000902 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Kauth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks");
+				PRODUCT_BUNDLE_IDENTIFIER = com.ozankaraali.Kauth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		000000000000000000000903 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@loader_path/Frameworks");
+				PRODUCT_BUNDLE_IDENTIFIER = com.ozankaraali.KauthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kauth.app/Kauth";
+			};
+			name = Debug;
+		};
+		000000000000000000000904 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@loader_path/Frameworks");
+				PRODUCT_BUNDLE_IDENTIFIER = com.ozankaraali.KauthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kauth.app/Kauth";
+			};
+			name = Release;
+		};
+		000000000000000000000905 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		000000000000000000000906 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000000000000000000000801 = {isa = XCConfigurationList; buildConfigurations = (000000000000000000000901, 000000000000000000000902); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		000000000000000000000802 = {isa = XCConfigurationList; buildConfigurations = (000000000000000000000903, 000000000000000000000904); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		000000000000000000000803 = {isa = XCConfigurationList; buildConfigurations = (000000000000000000000905, 000000000000000000000906); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+	};
+	rootObject = 000000000000000000000001;
+}

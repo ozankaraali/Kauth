@@ -1,0 +1,16 @@
+{
+  "version": 3,
+  "packet_size": 20,
+  "device_id": "fixture-device-01",
+  "private_key": "VZ9Fe2Su9B0o1HAEq9P6nL/B9eeBL+8Zdjto/hHDMZc=",
+  "public_key": "ghZoHCJMpg/T68+46YuOB8v61SgCia7RJdZIlrOXBV8=",
+  "setup_secret": "AAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8=",
+  "challenge": "ICEiIyQlJicoKSorLC0uLzAxMjM0NTY3ODk6Ozw9Pj8=",
+  "enc": "vvPPW96BFTlM6qcR7i1/RK/zu8f83cJt+zb1IGyelwo=",
+  "request_ciphertext": "CVzjrQ94JYWwp5o6kCuGZz+43qWa13AFxXVDdcVoRkkeI/+g7TTq0PaoYFcWSXceKzVJlFTN4TsZbkJWoYg=",
+  "request_plaintext": "{\"op\":\"echo\",\"text\":\"hello world — merhaba\"}",
+  "plaintext": "hello world — merhaba",
+  "exported_reply_key": "hCf78mS6ES8X4x5Bph1gf8QZo3uhotbWOcfi3Fsf9FA=",
+  "reply_ciphertext": "9wUwGZ3dVdIfYSELBCl7gkKtX6xPXrIkoLEKr7Lj2ff8epo1McVZkFQChfwKDEZIZfWO7HPyz7HhWMc05y1VymaZcYKXXAGBWA+v9I9BKbwLpi3kua5G6Un3MSOcijopl+XQ9cZYkDJJfjRk3Z+ZTpeYcfFXc+o+akA=",
+  "reply_plaintext": "{\"device_id\":\"fixture-device-01\",\"op\":\"echo\",\"event\":\"echo\",\"final\":true,\"echo\":\"hello world — merhaba\"}"
+}
