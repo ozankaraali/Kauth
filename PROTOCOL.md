@@ -100,7 +100,7 @@ The device compares the supplied challenge to its current unexpired challenge, t
 {"op":"echo","text":"hello world"}
 {"op":"scan"}
 {"op":"status"}
-{"op":"configure","ssid":"Facility IoT","password":"example-only-passphrase","hidden":false}
+{"op":"configure","ssid":"Site-IoT","password":"example-only-passphrase","hidden":false}
 ```
 
 The example passphrase is not a device default. `hidden` defaults to false. Configure supports WPA2-Personal and transition APs advertising WPA2-PSK, not enterprise, open, WEP, or WPA3-only networks. A hidden-network request permits directed discovery; it does not weaken authentication.

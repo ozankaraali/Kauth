@@ -14,10 +14,10 @@ Kauth sends credentials over an authenticated, encrypted Bluetooth Low Energy ch
 
 | Design goal | Implementation and evidence |
 | --- | --- |
-| Local setup without internet or an initial shared LAN | CoreBluetooth/BLE GATT carries provisioning; no cloud relay or IP connection between phone and device. Dependencies are installed beforehand. |
-| A real network connection | Recorded iPhone → Jetson join: Wi-Fi becomes connected, receives an address, and the OS and app confirm the result. |
-| No plaintext credentials over wireless | HPKE PSK mode protects requests; a session-derived key authenticates/encrypts replies. The QR pins the device key and authorizes setup. |
-| Usable by a field technician | Scan the supplied card, select the verified device, choose a network and tap Join. Optional Keychain reuse avoids retyping the site password for each device. |
+| Offline setup over BLE | CoreBluetooth/BLE GATT carries provisioning; no cloud relay or IP connection between phone and device. Dependencies are installed beforehand. |
+| Joins the real target Wi-Fi and verifies it | Recorded iPhone → Jetson join: Wi-Fi becomes connected, receives an address, and the OS and app confirm the result. |
+| Credentials encrypted before they leave the phone | HPKE PSK mode protects requests; a session-derived key authenticates/encrypts replies. The QR pins the device key and authorizes setup. |
+| Phone flow a field technician can follow from a setup card | Scan the supplied card, select the verified device, choose a network and tap Join. Optional Keychain reuse avoids retyping the site password for each device. |
 
 The [evidence notes](DEMO.md) explain the recording and its limits. “Target Network” is a video privacy alias. The recording does not claim internet reachability or that both endpoints had every other radio disabled.
 
@@ -87,10 +87,10 @@ cd Kauth
 python3 -m venv .venv
 .venv/bin/python -m pip install -e '.[test]'
 .venv/bin/device-provision scan --qr /path/to/private/qr.json
-.venv/bin/device-provision configure --qr /path/to/private/qr.json --ssid 'Facility IoT'
+.venv/bin/device-provision configure --qr /path/to/private/qr.json --ssid 'Site-IoT'
 ```
 
-`configure` prompts privately for the password; there is no password command-line argument. `--hidden` supports a hidden SSID. macOS may request Bluetooth permission for the terminal. This CLI is useful for reproduction and diagnostics; the iPhone is the non-developer interface.
+`configure` prompts privately for the password; there is no password command-line argument. `--hidden` supports a hidden SSID. macOS may request Bluetooth permission for the terminal. This CLI is useful for reproduction and diagnostics; the iPhone is the technician-facing interface.
 
 ## 5. Observe and maintain
 

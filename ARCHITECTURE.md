@@ -2,7 +2,7 @@
 
 **Ozan Karaali**
 
-Kauth provisions a headless Linux device from an iPhone or a second computer. A technician scans a private setup card, verifies the nearby device, selects the site Wi-Fi and receives an authenticated result. The provisioning channel needs no internet, cloud relay or initial shared LAN. Installing dependencies is a separate preparation step.
+Kauth provisions a headless Linux device from an iPhone or a second computer. A technician scans a private setup card, verifies the nearby device, selects the site Wi-Fi and receives an authenticated result. Setup needs no internet connection, cloud service or existing network. Installing dependencies is a separate preparation step.
 
 ## 1. Transport: BLE for setup, Wi-Fi for the network
 
